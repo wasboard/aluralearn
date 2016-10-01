@@ -1,0 +1,9 @@
+C:\Users\wasboard\Documents\GitHub\aluralearn\AluraCsharpBasico\AluraCsharpBasico\bin\Debug\AluraCsharpBasico.exe.config
+C:\Users\wasboard\Documents\GitHub\aluralearn\AluraCsharpBasico\AluraCsharpBasico\bin\Debug\AluraCsharpBasico.exe
+C:\Users\wasboard\Documents\GitHub\aluralearn\AluraCsharpBasico\AluraCsharpBasico\bin\Debug\AluraCsharpBasico.pdb
+C:\Users\wasboard\Documents\GitHub\aluralearn\AluraCsharpBasico\AluraCsharpBasico\obj\Debug\AluraCsharpBasico.csprojResolveAssemblyReference.cache
+C:\Users\wasboard\Documents\GitHub\aluralearn\AluraCsharpBasico\AluraCsharpBasico\obj\Debug\AluraCsharpBasico.Form1.resources
+C:\Users\wasboard\Documents\GitHub\aluralearn\AluraCsharpBasico\AluraCsharpBasico\obj\Debug\AluraCsharpBasico.Properties.Resources.resources
+C:\Users\wasboard\Documents\GitHub\aluralearn\AluraCsharpBasico\AluraCsharpBasico\obj\Debug\AluraCsharpBasico.csproj.GenerateResource.Cache
+C:\Users\wasboard\Documents\GitHub\aluralearn\AluraCsharpBasico\AluraCsharpBasico\obj\Debug\AluraCsharpBasico.exe
+C:\Users\wasboard\Documents\GitHub\aluralearn\AluraCsharpBasico\AluraCsharpBasico\obj\Debug\AluraCsharpBasico.pdb
