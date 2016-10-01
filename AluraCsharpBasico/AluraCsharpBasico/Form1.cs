@@ -76,5 +76,66 @@ namespace AluraCsharpBasico
                 MessageBox.Show("Você pode adquirir um cartão de crédito");
             }
         }
+
+        /*
+        if == Sugerir melhoria
+            Qual é a mensagem exibida pelo código abaixo?
+            
+                */
+        private void button4_Click(object sender, EventArgs e)
+        {
+            double saldo = 100.0;
+            saldo -= 80.0;
+
+            if (saldo == 0)
+            {
+                MessageBox.Show("Você não possui saldo em sua conta");
+            }
+            else
+            {
+                MessageBox.Show("Você possui saldo em sua conta");
+            }
+        }
+        /*
+        Cálculo de Imposto Sugerir melhoria
+        Crie um programa que tenha uma variável double valorDaNotaFiscal, e de acordo com esse valor, o imposto deve ser calculado. As regras de cálculo são:
+        Se o valor for menor que 1000, o imposto deve ser de 2%
+        Se o valor for maior ou igual a 1000 e menor do que 3000, o imposto deve ser de 2.5%
+        Se o valor for maior ou igual a 3000 e menor do que 7000 o imposto deve ser de 2.8%
+        Se for maior ou igual a 7000, o imposto deve ser de 3%
+        Imprima o valor do imposto que você calculou utilizando as regras acima em um MessageBox.
+            */
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //Declaração das variaveis
+            double valorDaNotaFiscal;
+            double result;
+
+            //incialização
+            valorDaNotaFiscal = 7000;
+            result = 0;
+
+            //Se o valor for menor que 1000, o imposto deve ser de 2%
+            if (valorDaNotaFiscal == 1000)
+            {
+                result = valorDaNotaFiscal * 0.02;
+            }
+            //Se o valor for maior ou igual a 1000 e menor do que 3000, o imposto deve ser de 2.5%
+            else if (valorDaNotaFiscal>=100 && valorDaNotaFiscal<=3000)
+            {
+                result = valorDaNotaFiscal * 0.025;
+            }
+            //Se o valor for maior ou igual a 3000 e menor do que 7000 o imposto deve ser de 2.8%
+            else if (valorDaNotaFiscal >= 3000 && valorDaNotaFiscal<7000)
+            {
+                result = valorDaNotaFiscal * 0.028;
+            }
+            //Se for maior ou igual a 7000, o imposto deve ser de 3%
+            else if (valorDaNotaFiscal>=7000)
+            {
+                result = valorDaNotaFiscal * 0.03;
+            }
+            MessageBox.Show("Imposto a pagas = " + result);
+        }
     }
 }
