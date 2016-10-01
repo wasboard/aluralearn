@@ -53,7 +53,15 @@ namespace AluraCsharpBasico
                 MessageBox.Show("Você é um cliente especial!");
             }
         }
+        /*
+        Além do operador && (AND), temos o operador || (OR), que verifica se uma das duas condições é verdadeira. Por exemplo:
+            bool podeSacar = saldo >= 0 || chequeEspecial < limiteChequeEspecial;
+            Também podemos inverter um valor de uma variável bool com o operador !:
 
+            bool menorDeIdade = idade < 18;
+            bool maiorDeIdade = !menorDeIdade;
+            Sabendo disso, qual a mensagem exibida pelo código abaixo?
+         */
         private void button3_Click(object sender, EventArgs e)
         {
             bool nomeNoSPC = true;
