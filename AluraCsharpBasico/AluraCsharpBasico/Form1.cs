@@ -137,5 +137,31 @@ namespace AluraCsharpBasico
             }
             MessageBox.Show("Imposto a pagas = " + result);
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            double valorEnvestido = 1000;
+            int i;
+
+            for(i = 1; i <= 12; i++)
+            {
+                valorEnvestido = valorEnvestido * 1.01;
+            }
+            MessageBox.Show("Valor Reajusado = "   +valorEnvestido);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            double valorEnvestido = 1000;
+
+            int i = 1;
+            while (i<=12)
+            {
+                valorEnvestido = valorEnvestido * 1.01;
+                i++;
+            }
+            MessageBox.Show("Valor Reajusado = " + valorEnvestido);
+            
+        }
     }
 }
