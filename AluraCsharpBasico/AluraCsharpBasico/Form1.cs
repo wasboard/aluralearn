@@ -329,5 +329,78 @@ namespace AluraCsharpBasico
             }
             
         }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            int soma = 0;
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i % 3 != 0)
+                {
+                    soma += i;
+                }
+            }
+            MessageBox.Show("O total é: " + soma);
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            Conta c1 = new Conta();
+            c1.numero = 1;
+            c1.titular = "João do Poste";
+            c1.saldo = 1000;
+
+            Conta c2 = new Conta();
+            c2.numero = 2;
+            c2.titular = "Maria do POste";
+            c2.saldo = 2000;
+            c2.cpf = "09988712390";
+            c1.saldo += 200;
+            MessageBox.Show("O total é: " + c1.saldo +"CPF = "+c2.cpf);
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            Conta mauricio = new Conta();
+            mauricio.numero = 1;
+            mauricio.titular = "Mauricio";
+            mauricio.saldo = 100.0;
+
+            Conta mauricio2 = new Conta();
+            mauricio2.numero = 1;
+            mauricio2.titular = "Mauricio";
+            mauricio2.saldo = 100.0;
+
+            if (mauricio == mauricio2)
+            {
+                MessageBox.Show("As contas são iguais");
+            }
+            else
+            {
+                MessageBox.Show("As contas são diferentes");
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Conta mauricio = new Conta();
+            mauricio.saldo = 2000.0;
+
+            Conta copia = mauricio;
+            copia.saldo = 3000.0;
+
+            MessageBox.Show("mauricio = " + mauricio.saldo);
+            MessageBox.Show("copia = " + copia.saldo);
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            /*
+            Crie a classe Conta com os seguintes atributos saldo (sendo double), titular (sendo string), 
+            numero (sendo int). Adicione um novo botão em sua aplicação cuja ação é instanciar uma conta preencher 
+            seus dados e depois exibir o nome do titular utilizando o MessageBox.
+            */
+
+        }
     }
 }
