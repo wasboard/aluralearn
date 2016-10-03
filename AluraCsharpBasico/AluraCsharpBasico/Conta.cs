@@ -10,7 +10,13 @@ namespace AluraCsharpBasico
     {
         public int numero;
         public string titular;
-        public double saldo;
+        public double saldo; 
         public string cpf;
+        public int agencia;
+        public void Saca(double valorASerSacado)
+        {
+            this.saldo -= valorASerSacado;
+            
+        }
     }
 }

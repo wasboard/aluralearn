@@ -400,7 +400,46 @@ namespace AluraCsharpBasico
             numero (sendo int). Adicione um novo botão em sua aplicação cuja ação é instanciar uma conta preencher 
             seus dados e depois exibir o nome do titular utilizando o MessageBox.
             */
+            Conta c = new Conta();
+            c.numero = 1;
+            c.titular = "Victor";
+            c.saldo = 100.0;
 
+            MessageBox.Show(c.titular);
+            /*
+            Adicione os atributos cpf e agencia na classe Conta. CPF pode ser uma string, enquanto agência pode ser um int.
+            Crie um novo objeto da classe Conta e teste esses atributos. Mãos à obra!
+            */
+            c.agencia = 99999;
+       
+
+            MessageBox.Show(c.agencia.ToString());
+
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            // criando duas contas
+            Conta mauricio = new Conta();
+            Conta guilherme = new Conta();
+            mauricio.saldo = 1000.0;
+            guilherme.saldo = 2000.0;
+
+            // transferindo dinheiro entre elas
+            double valorASerTransferido = 100.0;
+            mauricio.saldo -= valorASerTransferido;
+            guilherme.saldo += valorASerTransferido;
+            
+            MessageBox.Show(guilherme.saldo.ToString());
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            double saque = 200;
+            Conta c = new Conta();
+            MessageBox.Show("Saldo anterior = " + c.saldo);
+            c.Saca(saque);
+            MessageBox.Show("Saldo atual = " + c.saldo);
         }
     }
 }
