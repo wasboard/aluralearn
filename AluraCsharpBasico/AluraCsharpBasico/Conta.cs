@@ -18,5 +18,16 @@ namespace AluraCsharpBasico
             this.saldo -= valorASerSacado;
             
         }
+        public void Transfere(double valorTransferido, Conta titular)
+        {
+            titular.saldo += valorTransferido;
+            this.saldo -= valorTransferido;
+
+        }
+        public void Deposita(double valorDespositado)
+        {
+            this.saldo += valorDespositado;
+
+        }
     }
 }

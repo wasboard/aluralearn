@@ -53,6 +53,7 @@
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -304,11 +305,22 @@
             this.button25.Text = "button25";
             this.button25.UseVisualStyleBackColor = true;
             // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(12, 249);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(75, 23);
+            this.button26.TabIndex = 25;
+            this.button26.Text = "Transfer 2";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(284, 351);
+            this.Controls.Add(this.button26);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.button24);
             this.Controls.Add(this.button23);
@@ -367,6 +379,7 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button26;
     }
 }
 
