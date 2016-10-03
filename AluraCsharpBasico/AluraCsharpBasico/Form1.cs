@@ -246,7 +246,7 @@ namespace AluraCsharpBasico
         {
             //Faça um programa em C# que imprima todos os múltiplos de 3, entre 1 e 100.
             //Para saber se um número é múltiplo de 3, você pode fazer if (numero % 3 == 0).
-            int saida = 0;
+            //int saida = 0;
             for (int i = 1; i<=100;i++)
             {
                 if(i%3 == 0)
@@ -456,6 +456,85 @@ namespace AluraCsharpBasico
 
             MessageBox.Show("guilherme = " + guilherme.saldo);
             MessageBox.Show("mauricio = " + mauricio.saldo);
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            Conta guilherme = new Conta();
+            Conta maria = new Conta();
+
+            guilherme.saldo = 2000;
+            double rend = guilherme.CalculaRendimentoAnual();
+
+            //MessageBox.Show("guilherme = " + guilherme.saldo);
+            MessageBox.Show("guilherme = " + rend);
+
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            Conta guilherme = new Conta();
+            Conta maria = new Conta();
+
+            maria.saldo = 1000;
+            guilherme.saldo = 1000;
+
+            guilherme.TransfereDeposito(200,guilherme , maria);
+
+            MessageBox.Show("Maria saldo = " + maria.saldo);
+            MessageBox.Show("Guilherme saldo = " + guilherme.saldo);
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            Cliente victor = new Cliente();
+            victor.nome = "victor";
+
+            Conta umaConta = new Conta();
+            umaConta.cliente = victor;
+
+            umaConta.cliente.rg = "12345678-9";
+
+            MessageBox.Show(umaConta.cliente.nome + "\n" + umaConta.cliente.rg);
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            Conta umaConta = new Conta();
+            Cliente clienteGuilherme = new Cliente();
+            clienteGuilherme.nome = "Guilherme Silveira";
+            umaConta.cliente = clienteGuilherme;
+
+            MessageBox.Show(umaConta.cliente.nome);
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            Conta umaConta = new Conta();
+            Cliente clienteGuilherme = new Cliente();
+            clienteGuilherme.rg = "12345678-9";
+
+            umaConta.cliente = clienteGuilherme;
+            umaConta.cliente.rg = "98765432-1";
+
+            MessageBox.Show(clienteGuilherme.rg);
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            Conta umaConta = new Conta();
+            umaConta.Deposita(300.0);
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            Conta conta = new Conta();
+            conta.Deposita(200.0);
         }
     }
 }
