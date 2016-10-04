@@ -576,5 +576,23 @@ namespace AluraCsharpBasico
                 MessageBox.Show("Saque liberado."+saque);
             }
         }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            ContaEnc c = new ContaEnc();
+
+            Cliente cli= new Cliente(); // funciona, pois titular tem um set
+            c.Cliente = cli;
+            //c.Saldo = 1000.0; // não funciona, pois saldo é private set
+            Console.WriteLine(c.Saldo); // funciona, pois saldo tem get
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            ContaEnc c = new ContaEnc();
+            //double valorADepositar = 200.0;
+            //c.Saldo += valorADepositar;
+            Console.WriteLine(c.Saldo);
+        }
     }
 }
