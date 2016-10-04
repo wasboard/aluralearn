@@ -20,7 +20,8 @@ namespace AluraCsharpBasico
 
         public void Saca(double valorASerSacado)
         {
-            if(valorASerSacado > 0 && valorASerSacado <= this.saldo)
+            //if(valorASerSacado > 0 && valorASerSacado <= this.saldo)
+            if(this.saldo >= valorASerSacado && valorASerSacado >=0)
             {
                 this.saldo -= valorASerSacado;
             }

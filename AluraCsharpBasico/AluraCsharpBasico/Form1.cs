@@ -546,5 +546,35 @@ namespace AluraCsharpBasico
                 MessageBox.Show("Cliente maior de idade");
             }
         }
+
+        private void button35_Click(object sender, EventArgs e)
+        {
+            /*
+                Limite o valor do saque para R$ 200,00 caso o cliente seja menor de idade.
+                Lembre-se que ainda é necessário validar se o valor a ser sacado é menor ou 
+                igual ao saldo atual do cliente e é maior do que zero.
+             */
+            Conta conta = new Conta();
+            conta.saldo = 2000;
+
+            Cliente cli = new Cliente();
+            cli.idade = 21;
+
+            conta.cliente = cli;
+
+            double saque = 300;
+
+            if (!cli.EhMaiorDeIdade()&&saque>= 200)
+            {
+                conta.Saca(200);
+                MessageBox.Show("Clinete menor de idade, saqeu liberado R$ 200");
+               
+            }
+            else
+            {
+                conta.Saca(saque);
+                MessageBox.Show("Saque liberado."+saque);
+            }
+        }
     }
 }
