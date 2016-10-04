@@ -536,5 +536,15 @@ namespace AluraCsharpBasico
             Conta conta = new Conta();
             conta.Deposita(200.0);
         }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            Cliente cli = new Cliente();
+            cli.idade = 21;
+            if (cli.EhMaiorDeIdade())
+            {
+                MessageBox.Show("Cliente maior de idade");
+            }
+        }
     }
 }
