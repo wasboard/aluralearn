@@ -594,5 +594,29 @@ namespace AluraCsharpBasico
             //c.Saldo += valorADepositar;
             Console.WriteLine(c.Saldo);
         }
+
+        private void button38_Click(object sender, EventArgs e)
+        {
+            ClienteEnc clienc = new ClienteEnc("Wagner");
+            Console.WriteLine(clienc.Nome);
+        }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+            EmpresaArea emp = new EmpresaArea("00001","Tora");
+            Console.WriteLine(emp);
+        }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+            ClienteEnc enc = new ClienteEnc();
+            enc.Nome = "Teste";
+        }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            ClienteEnc cliente = new ClienteEnc() {Nome ="wagner" };
+            MessageBox.Show("O número é: " + cliente.Nome);
+        }
     }
 }
