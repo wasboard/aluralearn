@@ -16,3 +16,4 @@ C:\Alura\aluralearn\AluraCsharpBasico\AluraCsharpBasico\obj\Debug\AluraCsharpBas
 C:\Alura\aluralearn\AluraCsharpBasico\AluraCsharpBasico\obj\Debug\AluraCsharpBasico.csproj.GenerateResource.Cache
 C:\Alura\aluralearn\AluraCsharpBasico\AluraCsharpBasico\bin\Debug\AluraCsharpBasico.exe
 C:\Alura\aluralearn\AluraCsharpBasico\AluraCsharpBasico\bin\Debug\AluraCsharpBasico.pdb
+C:\Alura\aluralearn\AluraCsharpBasico\AluraCsharpBasico\obj\Debug\AluraCsharpBasico.CaixaEletronico.resources
