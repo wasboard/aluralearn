@@ -36,7 +36,7 @@ namespace CaixaEletronico
             this.saldo -= valorTransferido;
 
         }
-        public void Deposita(double valorDespositado)
+        public virtual void Deposita(double valorDespositado)
         {
             /*
                 Precisamos validar um depósito. Não podemos permitir um depósito de um valor negativo.

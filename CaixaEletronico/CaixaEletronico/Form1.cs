@@ -95,5 +95,11 @@ namespace CaixaEletronico
             textoSaldo.Text = Convert.ToString(this.poup.saldo);
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+           this.poup.Deposita(Convert.ToDouble( textoValor.Text));
+           textoSaldo.Text = Convert.ToString(this.poup.saldo);
+        }
     }
 }
