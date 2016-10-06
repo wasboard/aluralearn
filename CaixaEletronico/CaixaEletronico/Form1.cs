@@ -82,7 +82,7 @@ namespace CaixaEletronico
         private void button2_Click(object sender, EventArgs e)
         {
             
-            this.conta.saldo = (Convert.ToDouble(textoSaldo.Text));
+            //this.conta.saldo = (Convert.ToDouble(textoSaldo.Text));
             this.conta.Saca(Convert.ToDouble(textoValor.Text));
             textoSaldo.Text = Convert.ToString(this.conta.saldo);
 
@@ -90,10 +90,29 @@ namespace CaixaEletronico
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.poup.saldo = (Convert.ToDouble(textoSaldo.Text));
+            //this.poup.saldo = (Convert.ToDouble(textoSaldo.Text));
             this.poup.Saca(Convert.ToDouble(textoValor.Text));
             textoSaldo.Text = Convert.ToString(this.poup.saldo);
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Conta c1 = new ContaPoupanca();
+            c1.Deposita(100.0);
+            c1.Saca(50.0);
+            MessageBox.Show("conta poupança = " + c1.saldo);
+
+            Conta c2 = new Conta();
+            c2.Deposita(100.0);
+            c2.Saca(50.0);
+            MessageBox.Show("conta = " + c2.saldo);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ContaPoupanca cp = new ContaPoupanca();
+            cp.Deposita(200.0);
         }
     }
 }

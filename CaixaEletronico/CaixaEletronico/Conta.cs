@@ -10,7 +10,7 @@ namespace CaixaEletronico
     {
         public int numero { get; set; }
         public string titular { get; set; }
-        public double saldo { get; set; }
+        public double saldo { get; private set; }
         public string cpf { get; set; }
         public int agencia { get; set; }
         public string rg { get; set; }
@@ -18,7 +18,7 @@ namespace CaixaEletronico
 
         public Conta() { }
 
-        public Cliente cliente;
+        public Cliente cliente { get; set; }
 
         public virtual void Saca(double valorASerSacado)
         {
