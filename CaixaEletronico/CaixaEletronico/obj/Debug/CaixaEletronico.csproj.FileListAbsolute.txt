@@ -16,3 +16,12 @@ C:\Alura\aluralearn\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.cs
 C:\Alura\aluralearn\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.Form1.resources
 C:\Alura\aluralearn\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.Properties.Resources.resources
 C:\Alura\aluralearn\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.csproj.GenerateResource.Cache
+C:\Users\wasboard\Documents\GitHub\Alura\aluralearn\CaixaEletronico\CaixaEletronico\bin\Debug\CaixaEletronico.exe.config
+C:\Users\wasboard\Documents\GitHub\Alura\aluralearn\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.exe
+C:\Users\wasboard\Documents\GitHub\Alura\aluralearn\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.pdb
+C:\Users\wasboard\Documents\GitHub\Alura\aluralearn\CaixaEletronico\CaixaEletronico\bin\Debug\CaixaEletronico.exe
+C:\Users\wasboard\Documents\GitHub\Alura\aluralearn\CaixaEletronico\CaixaEletronico\bin\Debug\CaixaEletronico.pdb
+C:\Users\wasboard\Documents\GitHub\Alura\aluralearn\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.csprojResolveAssemblyReference.cache
+C:\Users\wasboard\Documents\GitHub\Alura\aluralearn\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.Form1.resources
+C:\Users\wasboard\Documents\GitHub\Alura\aluralearn\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.Properties.Resources.resources
+C:\Users\wasboard\Documents\GitHub\Alura\aluralearn\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.csproj.GenerateResource.Cache

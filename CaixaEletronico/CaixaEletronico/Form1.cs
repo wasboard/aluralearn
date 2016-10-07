@@ -98,6 +98,7 @@ namespace CaixaEletronico
 
         private void button4_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Conta c1 = new ContaPoupanca();
             c1.Deposita(100.0);
             c1.Saca(50.0);
@@ -150,6 +151,10 @@ namespace CaixaEletronico
             MessageBox.Show("c = " + c.saldo);
             MessageBox.Show("cc = " + cc.saldo);
             MessageBox.Show("cp = " + cp.saldo);
+=======
+           this.poup.Deposita(Convert.ToDouble( textoValor.Text));
+           textoSaldo.Text = Convert.ToString(this.poup.saldo);
+>>>>>>> 0b82e53f9fe3ec4beafc6d4b2806a28f25e03408
         }
     }
 }
