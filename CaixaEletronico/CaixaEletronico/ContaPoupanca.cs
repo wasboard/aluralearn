@@ -8,9 +8,17 @@ namespace CaixaEletronico
 {
     public class ContaPoupanca:Conta
     {
-       /* public override void Saca(double valorASerSacado)
+        /* public override void Saca(double valorASerSacado)
+         {
+             this.saldo -= (valorASerSacado + 0.10);
+         }*/
+        public void CalculaRendimento()
         {
-            this.saldo -= (valorASerSacado + 0.10);
-        }*/
+            this.saldo += 100.0;
+        }
+        public override void Atualiza(double taxa)
+        {
+            this.saldo += this.saldo * 3 * taxa;
+        }
     }
 }

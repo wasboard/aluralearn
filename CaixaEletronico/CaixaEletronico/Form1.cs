@@ -114,5 +114,42 @@ namespace CaixaEletronico
             ContaPoupanca cp = new ContaPoupanca();
             cp.Deposita(200.0);
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Conta c1 = new Conta();
+            Conta c2 = new Conta();
+
+            TotalizadorDeContas t = new TotalizadorDeContas();
+            t.Soma(c1);
+            t.Soma(c2);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Conta c = new ContaPoupanca();
+            //c.saldo = Convert.ToDouble(textoSaldo.Text);
+            c.CalculaRendimentoAnual();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Conta c = new Conta();
+            ContaCorrente cc = new ContaCorrente();
+            ContaPoupanca cp = new ContaPoupanca();
+
+            c.Deposita(1000.0);
+            cc.Deposita(1000.0);
+            cp.Deposita(1000.0);
+
+            AtualizadorDeContas atualizador = new AtualizadorDeContas(0.01);
+            atualizador.Roda(c);
+            atualizador.Roda(cc);
+            atualizador.Roda(cp);
+
+            MessageBox.Show("c = " + c.saldo);
+            MessageBox.Show("cc = " + cc.saldo);
+            MessageBox.Show("cp = " + cp.saldo);
+        }
     }
 }

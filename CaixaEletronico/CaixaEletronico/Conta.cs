@@ -10,7 +10,7 @@ namespace CaixaEletronico
     {
         public int numero { get; set; }
         public string titular { get; set; }
-        public double saldo { get; private set; }
+        public double saldo { get; protected set; }
         public string cpf { get; set; }
         public int agencia { get; set; }
         public string rg { get; set; }
@@ -76,6 +76,10 @@ namespace CaixaEletronico
             //this.saldo -= valorTransferido;
             titular2.Deposita(valorTransferido);
 
+        }
+        public virtual void Atualiza(double taxa)
+        {
+            this.saldo += this.saldo * taxa;
         }
 
     }
